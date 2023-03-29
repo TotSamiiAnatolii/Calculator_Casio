@@ -37,15 +37,6 @@ final class MainViewController: UIViewController {
         mainView.configure(with: ModelMainView())
     }
     
-    private let printScientificFormatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        let locale = Locale.current
-        formatter.numberStyle = .scientific
-        formatter.minimumFractionDigits = 3
-        formatter.exponentSymbol = "e"
-        return formatter
-    }()
-    
     private func setNumber(type: KeyBoardSymbol) {
         
         let number = type.rawValue
@@ -94,7 +85,7 @@ extension MainViewController: CalculatorWork {
         default:
             break
         }
-        previousOperand = NumberFormatter.formatToCurrency().string(from: output as NSNumber) ?? empty
+        previousOperand = NumberFormatter.formatToValue().string(from: output as NSNumber) ?? empty
         
         return previousOperand
     }
@@ -123,7 +114,7 @@ extension MainViewController: CalculatorWork {
         
         let result = number / 100
         
-        guard let convertResult = NumberFormatter.formatToCurrency().string(from: result as NSNumber) else { return empty }
+        guard let convertResult = NumberFormatter.formatToValue().string(from: result as NSNumber) else { return empty }
         mainView.displayView.setValue(value: convertResult)
         return convertResult
     }
@@ -161,7 +152,7 @@ extension MainViewController: CalculatorWork {
         let koef: Double = -1
         
         let rezult = number * koef
-        guard let convertResult = NumberFormatter.formatToCurrency().string(from: rezult as NSNumber) else { return empty }
+        guard let convertResult = NumberFormatter.formatToValue().string(from: rezult as NSNumber) else { return empty }
         mainView.displayView.setValue(value: convertResult)
         return convertResult
     }

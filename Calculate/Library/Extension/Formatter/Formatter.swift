@@ -10,8 +10,8 @@ import Foundation
 extension Formatter {
     
     static let formatter = NumberFormatter()
-    
-    static let formatterFrom: NumberFormatter = {
+
+    static let formatterFromDouble: NumberFormatter = {
         let formatter = NumberFormatter()
         formatter.roundingMode = .up
         formatter.locale = Locale.current
@@ -23,7 +23,7 @@ extension Formatter {
         return formatter
     }()
     
-    static func formatToCurrency() -> NumberFormatter {
+    static func formatToValue() -> NumberFormatter {
         formatter.roundingMode = .up
         formatter.locale = Locale.current
         formatter.numberStyle = .decimal
@@ -36,6 +36,5 @@ extension Formatter {
 
 extension Numeric {
     
-    var formatterFrom: String { Formatter.formatterFrom.string(for: self) ?? "" }
-
+    var formatterFrom: String { Formatter.formatterFromDouble.string(for: self) ?? "" }
 }

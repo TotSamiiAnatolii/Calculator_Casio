@@ -11,7 +11,7 @@ extension String {
     
     func convertTextInDouble() -> Double {
         let textWithoutSpaces = self.replacingOccurrences(of: " ", with: "")
-        guard  let number = Formatter.formatterFrom.number(from: textWithoutSpaces) as? Double else {
+        guard  let number = Formatter.formatterFromDouble.number(from: textWithoutSpaces) as? Double else {
             return 0 }
         return number
     }
