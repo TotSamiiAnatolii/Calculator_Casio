@@ -25,6 +25,7 @@
 		18940F06296AF0BF00EDE185 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18940F05296AF0BF00EDE185 /* ConfigurableView.swift */; };
 		18940F09296AF10D00EDE185 /* ModelMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18940F08296AF10D00EDE185 /* ModelMainView.swift */; };
 		18940F0B296AF27500EDE185 /* KeyBoardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18940F0A296AF27500EDE185 /* KeyBoardDelegate.swift */; };
+		1895A3B62A039D2500D20B9B /* UIView+AddInnerShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895A3B52A039D2500D20B9B /* UIView+AddInnerShadow.swift */; };
 		18D467EB29A93D8300027EC0 /* СalculatorWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D467EA29A93D8300027EC0 /* СalculatorWork.swift */; };
 		18E576D3296FFE22002F7E55 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E576D2296FFE22002F7E55 /* Formatter.swift */; };
 		CE6F08F529675C0E0044E7DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F08F429675C0E0044E7DE /* AppDelegate.swift */; };
@@ -74,6 +75,7 @@
 		18940F05296AF0BF00EDE185 /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
 		18940F08296AF10D00EDE185 /* ModelMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMainView.swift; sourceTree = "<group>"; };
 		18940F0A296AF27500EDE185 /* KeyBoardDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardDelegate.swift; sourceTree = "<group>"; };
+		1895A3B52A039D2500D20B9B /* UIView+AddInnerShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddInnerShadow.swift"; sourceTree = "<group>"; };
 		18D467EA29A93D8300027EC0 /* СalculatorWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СalculatorWork.swift"; sourceTree = "<group>"; };
 		18E576D2296FFE22002F7E55 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		CE6F08F129675C0E0044E7DE /* Calculate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +169,14 @@
 				18940F08296AF10D00EDE185 /* ModelMainView.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1895A3B42A039D0600D20B9B /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				1895A3B52A039D2500D20B9B /* UIView+AddInnerShadow.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		18E576D1296FFDA3002F7E55 /* Formatter */ = {
@@ -298,6 +308,7 @@
 		CE6F093529678D7F0044E7DE /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1895A3B42A039D0600D20B9B /* UIView */,
 				188E268129AB4E8400308A72 /* String */,
 				CE6F093929678E6B0044E7DE /* UIButton */,
 				CE6F093629678D890044E7DE /* UIStackView */,
@@ -481,6 +492,7 @@
 				18940F09296AF10D00EDE185 /* ModelMainView.swift in Sources */,
 				18940F06296AF0BF00EDE185 /* ConfigurableView.swift in Sources */,
 				18940F0B296AF27500EDE185 /* KeyBoardDelegate.swift in Sources */,
+				1895A3B62A039D2500D20B9B /* UIView+AddInnerShadow.swift in Sources */,
 				CE6F093229678A4A0044E7DE /* SolarPanel.swift in Sources */,
 				CE6F093B29678E7F0044E7DE /* UIButton+.swift in Sources */,
 			);
